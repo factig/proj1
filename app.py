@@ -28,7 +28,7 @@ import random
 if __name__ == '__main__':
     # Generate a random port number between 5000 and 9999
     random_port = random.randint(5000, 9999)
-    app.run(debug=True, port=random_port)
+    app.run(host="0.0.0.0", port=random_port)
 #if __name__ == "__main__":
  #   app.run(host="0.0.0.0",port=8501) # EC2 on AWS
     # app.run(host="127.0.0.1",port=9000) # local machine
